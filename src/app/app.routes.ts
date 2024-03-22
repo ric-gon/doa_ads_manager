@@ -1,8 +1,22 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { FbLoginComponent } from './fb-login/fb-login.component';
+import { HomeComponent } from './components/home/home.component';
+import { FbLoginComponent } from './components/fb-login/fb-login.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 
 export const routes: Routes = [
-  {path: 'home', component: HomeComponent, title: 'DOA - Home Page'},
-  {path: 'fb', component: FbLoginComponent, title: 'Facebook - Login'},
+  {
+    path: '', 
+    component: HomeComponent, 
+    title: 'DOA - Home Page',
+  },
+  {
+    path: 'facebook', 
+    component: FbLoginComponent, 
+    title: 'Facebook - Login'
+  },
+  {
+    path: 'dashboard', 
+    component: DashboardComponent, 
+    title: 'Dashboard - Facebook account'
+  },
 ];

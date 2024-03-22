@@ -1,0 +1,47 @@
+<header>
+  <nav>
+    <div class="sites">
+      <a routerLink="/">Home</a>
+      <a href="">Docs</a>
+      <a routerLink="/facebook">Facebook</a>
+    </div>
+    <div class="user-actions">
+      <button (click)="getFacebookLoginService()">Sign In</button>
+      <button>Sign Up</button>
+    </div>
+  </nav>
+</header>
+<main>
+  <section class="hero">
+    <h1>Welcome to Digital Optimizer Ads Manager</h1>
+    <p>Manage your Facebook Ads campaigns efficiently with this powerful tool.</p>
+    
+    <button (click)="getFacebookLoginService()">Sign In</button>
+
+    <!-- FACEBOOK BUTTON -->
+    <!-- <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0&appId=1029096075008340" nonce="2139T3kJ"></script>
+    <div class="fb-login-button" data-width="100" data-size="" data-button-type="" data-layout="" data-auto-logout-link="true" data-use-continue-as="false"></div>  -->
+   
+</section>
+
+<section class="features">
+    <div class="feature">
+        <h2>Create Campaigns</h2>
+        <p>Set up and manage your advertising campaigns easily.</p>
+    </div>
+    <div class="feature">
+        <h2>Monitor Performance</h2>
+        <p>Track the performance of your ads and campaigns in real-time.</p>
+    </div>
+    <div class="feature">
+        <h2>Optimize Ads</h2>
+        <p>Optimize your ads to reach your target audience effectively.</p>
+    </div>
+</section>
+</main>
+<footer>
+  
+  <p> <a href="">Digital Optimizer Agency</a> | <a href="">Terms of Service</a> | <a href="">Privacy Policy</a> </p>
+  <p>&copy; 2024 Digital Optimizer Agency. All rights reserved.</p>
+</footer>

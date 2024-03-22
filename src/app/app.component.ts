@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
+import { FacebookLoginService } from './services/facebook-login.service';
 
 @Component({
   selector: 'app-root',
@@ -10,5 +11,13 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'doa_ads_manager';
+  title = 'Digital Optimizer Agency | Ads Manager';
+
+  constructor(private facebookLoginService: FacebookLoginService) {
+
+  }
+
+  ngOnInit(): void {
+    this.facebookLoginService.initializeFacebookSDK();
+  }
 }
