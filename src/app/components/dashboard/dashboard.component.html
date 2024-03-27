@@ -1,4 +1,4 @@
-<div class="feature">
+<div class="dashboard">
   <h2>Dashboard</h2>
   <p>Visualize your Facebook Ads data!</p>
   <span id="data">{{data}}</span>
@@ -7,11 +7,25 @@
     {{response}}
   </div>
 
-  <div #firstChart style="height: 500px;">
+  <div id="campaign-selector">
+    <label for="">Select your Campains</label>
 
+    <!-- <label for="options">Selecciona una opción:</label>
+    <select id="options" [(ngModel)]="opcionSeleccionada">
+      <option *ngFor="let opcion of opciones" [value]="opcion">{{ opcion }}</option>
+    </select>
+    <p>Opción seleccionada: {{ opcionSeleccionada }}</p> -->
   </div>
 
-  <button (click)="getChart()">Load Chart</button>
+
+  <div class="chart-wrapper">
+    <div class="chart-title-wrapper">
+      <h2>Line Chart</h2>
+      <div #firstChart class="chart-container"></div>
+    </div>
+  </div>
+
+  <button (click)="generateChart()">Load Chart</button>
 
   <button (click)="getFacebookData()">Sign In</button>
 </div>

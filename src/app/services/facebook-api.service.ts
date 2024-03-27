@@ -11,9 +11,7 @@ declare global {
 })
 export class FacebookApiService {
 
-  constructor() {
-    //inittoken
-  }
+  constructor() { }
 
   getUserGeneralAccountData(): void {
     window.FB.api('/me', {fields: 'name, email'}, function(response: any) {
@@ -21,7 +19,7 @@ export class FacebookApiService {
     });
   }
 
-  getAdAccountData(/* token: string */): void {
+  getAdAccountData(): void {
 
     let userAccessToken: string = '';
 
@@ -44,5 +42,4 @@ export class FacebookApiService {
       );
     }
   }
-
 }
