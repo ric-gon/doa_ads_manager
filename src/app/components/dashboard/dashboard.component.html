@@ -1,8 +1,10 @@
 <div class="dashboard">
   <h2>Dashboard</h2>
   <p>Visualize your Facebook Ads data!</p>
-  <span id="data">{{data}}</span>
 
+  <button (click)="getFacebookData()">Show data</button>
+  <span id="data">{{data | json }}</span>
+  
   <div>
     {{response}}
   </div>
@@ -40,5 +42,4 @@
 
   <button (click)="generateChart()">Load Chart</button>
 
-  <button (click)="getFacebookData()">Sign In</button>
 </div>
