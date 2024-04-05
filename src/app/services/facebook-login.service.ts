@@ -23,6 +23,7 @@ export class FacebookLoginService {
   }
 
   initializeFacebookSDK(): void {
+    console.log('triggered.');
     if (isPlatformBrowser(this.platformId)) {
       
       (function(d: Document, s: string, id: string){

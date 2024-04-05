@@ -1,4 +1,4 @@
-header {
+/* header {
   background-color: #333; 
   padding: 10px; 
 }
@@ -35,11 +35,20 @@ nav button {
 nav button:hover {
   background-color: #45a049; 
 }
-
-main{
+*/
+main {
   text-align: center;
 }
 
+.feature {
+  padding: 20px 0px;
+}
+
+.hero {
+  padding: 50px 0px;
+}
+
+/*
 section{
   margin: 50px;
   padding: 30px;
@@ -53,4 +62,4 @@ footer{
 
 footer p{
   margin-bottom: 0px;
-}
+} */

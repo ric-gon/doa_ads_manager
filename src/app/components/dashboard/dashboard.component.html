@@ -8,14 +8,27 @@
   </div>
 
   <div id="campaign-selector">
-    <label for="">Select your Campains</label>
-
     <!-- <label for="options">Selecciona una opción:</label>
     <select id="options" [(ngModel)]="opcionSeleccionada">
       <option *ngFor="let opcion of opciones" [value]="opcion">{{ opcion }}</option>
     </select>
     <p>Opción seleccionada: {{ opcionSeleccionada }}</p> -->
+    <div class="grid">
+      <label for="disabled">
+        Campaign
+        <input type="text" id="disabled" name="disabled" placeholder="Disabled" disabled="">
+      </label>
+      <label for="disabled">
+        Ad Set
+        <input type="text" id="disabled" name="disabled" placeholder="Disabled" disabled="">
+      </label>
+      <label for="disabled">
+        Ad
+        <input type="text" id="disabled" name="disabled" placeholder="Disabled" disabled="">
+      </label>
+    </div>
   </div>
+
 
 
   <div class="chart-wrapper">
