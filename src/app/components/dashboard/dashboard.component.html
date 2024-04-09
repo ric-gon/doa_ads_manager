@@ -4,17 +4,77 @@
 
   <button (click)="getFacebookData()">Show data</button>
   <span id="data">{{data | json }}</span>
-  
+
   <div>
     {{response}}
   </div>
 
   <div id="campaign-selector">
-    <!-- <label for="options">Selecciona una opción:</label>
-    <select id="options" [(ngModel)]="opcionSeleccionada">
-      <option *ngFor="let opcion of opciones" [value]="opcion">{{ opcion }}</option>
-    </select>
-    <p>Opción seleccionada: {{ opcionSeleccionada }}</p> -->
+    <div class="grid">
+      <div>
+        <label for="adaccounts">Adaccount</label>
+  
+        <select id="adaccounts" name="adaccounts">
+          @for (account of adaccounts; track account.name){
+          <option [value]=account.name>{{account.name}}</option>
+          } @empty {
+          <option value="">No Options</option>
+          }
+        </select>
+      </div>
+      
+      <div>
+        <label for="Campaigns">Campaign</label>
+  
+        <!-- <select id="Campaigns" name="Campaigns">
+          @for (account of adaccounts; track account.name){
+          <option [value]=account.name>{{account.name}}</option>
+          } @empty {
+          <option value="">No Options</option>
+          }
+        </select> -->
+      </div>
+
+      <div>
+        <label for="AdSet">Campaign</label>
+  
+        <!-- <select id="AdSet" name="AdSet">
+          @for (account of adaccounts; track account.name){
+          <option [value]=account.name>{{account.name}}</option>
+          } @empty {
+          <option value="">No Options</option>
+          }
+        </select> -->
+      </div>
+
+      <div>
+        <label for="Ad">Ad</label>
+  
+        <!-- <select id="Ad" name="Ad">
+          @for (account of adaccounts; track account.name){
+          <option [value]=account.name>{{account.name}}</option>
+          } @empty {
+          <option value="">No Options</option>
+          }
+        </select> -->
+      </div>
+    </div>
+  </div>
+
+  <!-- <div style="border: 5px red;height: 100px; background-color: grey;">
+    <label for="adaccounts">Choose your adaccount from the list:</label>
+    <input list="adaccounts" name="adaccount" id="adaccount">
+    
+    <datalist id="adaccounts">
+      @for (account of adaccounts; track account.name){
+        <option [value]=account.name>{{account.name}}</option>
+      } @empty {
+        <option value="">No Options</option>
+      }
+    </datalist>
+  </div> -->
+
+  <!-- <div id="campaign-selector">
     <div class="grid">
       <label for="disabled">
         Campaign
@@ -29,7 +89,7 @@
         <input type="text" id="disabled" name="disabled" placeholder="Disabled" disabled="">
       </label>
     </div>
-  </div>
+  </div> -->
 
 
 
@@ -41,5 +101,7 @@
   </div>
 
   <button (click)="generateChart()">Load Chart</button>
+
+  <button (click)="generateDropdowns()">ViewJson</button>
 
 </div>

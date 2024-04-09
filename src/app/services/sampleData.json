@@ -1,0 +1,86 @@
+{
+  "__zone_symbol__state": true,
+  "__zone_symbol__value": {
+    "id": "198819476641267",
+    "name": "Ricardo Gonzalez",
+    "adaccounts": {
+      "data": [
+        {
+          "campaigns": {
+            "data": [
+              {
+                "name": "Taboga verano - Copy",
+                "id": "120202043470390139"
+              },
+              {
+                "name": "Taboga verano",
+                "id": "120201588447220139"
+              },
+              {
+                "name": "Dia de la Madre ll ESP",
+                "id": "120200672625390139"
+              },
+              {
+                "name": "Lead Gen Booking - Call ll Taboga & Lunada",
+                "id": "23858752638280138"
+              },
+              {
+                "name": "Lead Gen Booking - Call ll ESP",
+                "id": "23856544142510138"
+              },
+              {
+                "name": "Whale-watching ll ENG",
+                "id": "23856531741310138"
+              }
+            ],
+            "paging": {
+              "cursors": {
+                "before": "QVFIUnIyMTZACbnpjOGs3NHBJeU1tSVR0VmhLUjhlTnVJMEhwVHZAoazdCZAl9GbTBrcGdndnR6bmJsYnhJb0YxZAFBQQzNpd3d0YktaX09lYUFrSXotSTdWb2JR",
+                "after": "QVFIUkZAVdXZASN0ozZAHlQZAVhMUDZA6M0t2LXBVU2tSSDU4NXltN3lVaEw2QjFoYjVXMS1KSktabEd4ZAWxiZAEx5bFJHbjJ0ZAWNIekRLSkZAnUnVrQzRtMUJuMXNn"
+              }
+            }
+          },
+          "id": "act_667215100384968"
+        },
+        {
+          "campaigns": {
+            "data": [
+              {
+                "name": "[12/22/2023] Promoting tel:+19052775967",
+                "id": "120202962295990218"
+              },
+              {
+                "name": "[12/12/2023] Promoting https://facebook.com/BrasasLatinFood",
+                "id": "120201939089140218"
+              },
+              {
+                "name": "[ACA Prosperity Health]-[HH Relief]",
+                "id": "120201400288290218"
+              },
+              {
+                "name": "[ACA Prosperity Health]-[HH Stimulus]",
+                "id": "120200888341340218"
+              }
+            ],
+            "paging": {
+              "cursors": {
+                "before": "QVFIUk9tOUoyX245aGt6Y0tCZAFliNFdlNGVmOEI2Skw3azdFV1J5ZAVdaREFicGpoNzJzUUtYSXZAwTV9SaXc1d3NjQWh3ZAm9RYUFXcGR6TVQzaFk1OGdyN21B",
+                "after": "QVFIUnFVM004cmt6bEJvYUkxckZAPb0N1RGxhWDZAQQmVfcExaMktYUHN4bzl3Ni1pcTFRUHVfS1J3aS0yU3NIWlJQbWJRZA2kyYnFiRTdkaHlmVVJUSEhNTHB3"
+              }
+            }
+          },
+          "id": "act_758545262530204"
+        },
+        {
+          "id": "act_1010020233473868"
+        }
+      ],
+      "paging": {
+        "cursors": {
+          "before": "MjM4NDM0Mjk5ODEyMzAxMzgZD",
+          "after": "MjM4NjAxMjIxNTQ0NjA2NjIZD"
+        }
+      }
+    }
+  }
+}
