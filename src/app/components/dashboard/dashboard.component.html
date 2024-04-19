@@ -13,8 +13,8 @@
     <div class="grid">
       <div>
         <label for="adaccounts">Adaccount</label>
-  
-        <select id="adaccounts" name="adaccounts">
+
+        <select id="adaccounts" name="adaccounts" (change)="getSelectedElement(adAccountSelector, 'adAccount')" #adAccountSelector>
           @for (account of adaccounts; track account.name){
           <option [value]=account.name>{{account.name}}</option>
           } @empty {
@@ -22,41 +22,41 @@
           }
         </select>
       </div>
-      
+
       <div>
         <label for="Campaigns">Campaign</label>
-  
-        <!-- <select id="Campaigns" name="Campaigns">
-          @for (account of adaccounts; track account.name){
-          <option [value]=account.name>{{account.name}}</option>
+
+        <select id="Campaigns" name="Campaigns" (change)="getSelectedElement(campaignSelector, 'campaign')" #campaignSelector>
+          @for (campaign of campaigns; track campaign.name){
+          <option [value]=campaign.name>{{campaign.name}}</option>
           } @empty {
           <option value="">No Options</option>
           }
-        </select> -->
+        </select>
       </div>
 
       <div>
-        <label for="AdSet">Campaign</label>
-  
-        <!-- <select id="AdSet" name="AdSet">
-          @for (account of adaccounts; track account.name){
-          <option [value]=account.name>{{account.name}}</option>
+        <label for="AdSet">Ad Set</label>
+
+        <select id="AdSet" name="AdSet" (change)="getSelectedElement(adSetSelector, 'adset')" #adSetSelector>
+          @for (adSet of adSets; track adSet.name){
+          <option [value]=adSet.name>{{adSet.name}}</option>
           } @empty {
           <option value="">No Options</option>
           }
-        </select> -->
+        </select>
       </div>
 
       <div>
         <label for="Ad">Ad</label>
-  
-        <!-- <select id="Ad" name="Ad">
-          @for (account of adaccounts; track account.name){
-          <option [value]=account.name>{{account.name}}</option>
+
+        <select id="Ad" name="Ad" (change)="getSelectedElement(adSelector, 'ad')" #adSelector>
+          @for (ad of ads; track ad.name){
+          <option [value]=ad.name>{{ad.name}}</option>
           } @empty {
           <option value="">No Options</option>
           }
-        </select> -->
+        </select>
       </div>
     </div>
   </div>

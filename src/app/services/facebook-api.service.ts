@@ -28,16 +28,13 @@ export class FacebookApiService {
   async getAdAccountData(): Promise<any> {
     return new Promise((resolve, reject) => {
       if (typeof window !== 'undefined') {
-        console.log("Token in FB Api Service: ", this.userAccessToken);
         window.FB.api(
           '/me',
           'GET',
           {
-            'fields': 'id,name,adaccounts{campaigns{name}}',
-            access_token: this.userAccessToken
+            'fields': 'adaccounts{name,id,campaigns{name,id,adsets{name,id,adcreatives{name,id}}}}',
           }, (response: any) => {
             console.log('response: ', response);
-            console.log('response typeOf: ', typeof (response));
             resolve(response);
           }
         );
